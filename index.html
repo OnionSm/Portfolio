@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vuong Duong Thai Ha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vuong Duong Thai Ha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/avatar.jpg" alt="Vuong Duong Thai Ha profile picture"
+     style="width: 350px; height: 350px; border-radius: 50%; object-fit: cover;" />
+
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vuong Duong Thai Ha</h1>
+        <p class="section__text__p2">Game Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Intern_Game_Developer_VuongDuongThaiHa.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hà-vương-dương-thái-9472a9325/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/OnionSm'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Game Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>University of Information Technology - Vietnam National University, Ho Chi Minh City</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+               I am a 3th-year Computer Science student at the University of Information Technology with a strong interest
+ in becoming a Game Developer. I am eager to learn, adapt, and grow as part of a professional team. Through
+ academic and internship projects in Game Development, Computer Graphics, and Computer Vision, I have built
+ a solid foundation in both technical and teamwork skills, including problem-solving and logical thinking.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container" >
+            <h2 class="experience-sub-title">Programing Language</h2>
+              <div class="article-container">
+                <article>
+                  <div>
+                    <h3>C/C++</h3>
+                    <!-- <p>Pretty good</p> -->
+                  </div>
+                </article>
+
+                <article>
+                  <div>
+                    <h3>C#</h3>
+                    <!-- <p>Pretty good</p> -->
+                  </div>
+                </article>
+
+                <article>    
+                  <div>
+                    <h3>Java</h3>
+                    <!-- <p>Basic</p> -->
+                  </div>
+                </article>
+
+                <article>
+                  <div>
+                    <h3>Python</h3>
+                    <!-- <p>Basic</p> -->
+                  </div>
+                </article>
+
+                <article>
+                  <div>
+                    <h3>Javascipt</h3>
+                    <!-- <p>Basic</p> -->
+                  </div>
+                </article>
+
+                <article>
+                  <div>
+                    <h3>SQL</h3>
+                    <!-- <p>Basic</p> -->
+                  </div>
+                </article>
+              
+              </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Deep Learning</h2>
+              <div class="article-container">
+                <article>
+                  <div>
+                    <h3>Pytorch</h3>
+                    <!-- <p>Basic</p> -->
+                  </div>
+                </article>
+
+                <article>
+                  <div>
+                    <h3>Hugging Face</h3>
+                    <!-- <p>Basic</p> -->
+                  </div>
+                </article>
+              </div>
+          </div>
+
+          
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Platforms & Other</h2>
+            <div class="article-container">
+              <article>
+                
+                <div>
+                  <h3>Unity</h3>
+                  <!-- <p>Good</p> -->
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Linux</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <h3>K8S</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <h3>Docker</h3>
+                  <!-- <p>Good</p> -->
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <h3>Google Cloud</h3>
+                  <!-- <p>Good</p> -->
+                </div>
+              </article>
+
+              <article>
+                
+                <div>
+                  <h3>Git</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Android Studio</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <h3>Grafana</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+
+              <article>
+                <div>
+                  <h3>Prometheus</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <div class="article-container-project">
+              <img
+                src="./assets/uvsu.png"
+                alt="UvsU"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project <br>UvsU</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/OnionSm/UvsU'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container-project">
+              <img
+                src="./assets/uno_app_logo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project<br>UNO</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/OnionSm/UNO'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container-project">
+              <img
+                src="./assets/solar.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project<br> Solar System 3D</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/OnionSm/Solar_System'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">vuongha16104@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hà-vương-dương-thái-9472a9325/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Vuong Duong Thai Ha. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
